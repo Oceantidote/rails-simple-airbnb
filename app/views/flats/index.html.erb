@@ -1,0 +1,20 @@
+<div class="container">
+  <table>
+    <tr>
+      <% @flats.each do |flat| %>
+        <td class="card col-sx-12 col-sm-4 card-container">
+          <h3><%= flat.name %></h3>
+          <p><%= flat.address %></p>
+          <h4>Guests: <%= flat.number_of_guests %></h4>
+          <h4>Price per night: <%= flat.price_per_night %></h4>
+          <%= link_to "More info", flat_path(flat) %>
+          <%= link_to "Edit", edit_flat_path(flat) %>
+          <%= link_to "delete", flat_path(flat),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+
+        </td>
+      <% end %>
+    </tr>
+  </table>
+</div>

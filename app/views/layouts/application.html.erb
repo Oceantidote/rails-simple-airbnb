@@ -3,12 +3,21 @@
   <head>
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="header">
+      <div class="simple_airbnb">
+        <h2>Simple Airbnb</h2>
+      </div>
+      <div class="add">
+        <%= link_to "Add flat", new_flat_path, { :class=>"btn-primary" }%>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

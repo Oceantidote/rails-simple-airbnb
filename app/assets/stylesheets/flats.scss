@@ -1,0 +1,23 @@
+// Place all the styles related to the Flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.add {
+  flex: 0 0 auto;
+}
+
+.simple_airbnb {
+    flex: 0 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E5E7E6;
+}
+
+// .card-container {
+//   margin: 30px !important;
+//   background-color: #F8F7FF;
+//   box-shadow: 2px 2px gray;
+// }
