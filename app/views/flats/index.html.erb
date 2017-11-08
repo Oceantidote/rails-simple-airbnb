@@ -1,20 +1,33 @@
 <div class="container">
-  <table>
-    <tr>
-      <% @flats.each do |flat| %>
-        <td class="card col-sx-12 col-sm-4 card-container">
-          <h3><%= flat.name %></h3>
-          <p><%= flat.address %></p>
-          <h4>Guests: <%= flat.number_of_guests %></h4>
-          <h4>Price per night: <%= flat.price_per_night %></h4>
-          <%= link_to "More info", flat_path(flat) %>
-          <%= link_to "Edit", edit_flat_path(flat) %>
-          <%= link_to "delete", flat_path(flat),
-      method: :delete,
-      data: { confirm: "Are you sure?" } %>
-
-        </td>
-      <% end %>
-    </tr>
-  </table>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-4">
+        <div class="card">
+          <img class="card-image" src="<%= flat.photo %>" alt="">
+          <h6><%= flat.name %></h6>
+          <ul class="method_list">
+            <li>
+              <i class="material-icons">hotel</i> <%= flat.number_of_guests %>
+            </li>
+            <li>
+              <i class="material-icons">euro_symbol</i> <%= flat.price_per_night %>
+            </li>
+          </ul>
+          <ul class="method_list">
+            <li>
+            <%= link_to "Info", flat_path(flat), { class: "green"} %>
+            </li>
+            <li>
+            <%= link_to "Edit", edit_flat_path(flat), { class: "yellow"} %>
+            </li>
+            <li>
+            <%= link_to "delete", flat_path(flat),
+        method: :delete,
+        data: { confirm: "Are you sure?" }, class: "red" %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

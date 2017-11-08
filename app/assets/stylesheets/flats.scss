@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .add {
   flex: 0 0 auto;
+  margin: 10px;
 }
 
 .simple_airbnb {
@@ -16,8 +17,27 @@
   background-color: #E5E7E6;
 }
 
-// .card-container {
-//   margin: 30px !important;
-//   background-color: #F8F7FF;
-//   box-shadow: 2px 2px gray;
-// }
+.card-container {
+  margin: 30px !important;
+  background-color: #F8F7FF;
+  box-shadow: 2px 2px gray;
+}
+.card-image {
+  width: 250px;
+  height: 150px;
+}
+
+.method_list li{
+  display: inline;
+}
+
+.red {
+  color: red !important;
+}
+.yellow {
+  color: yellow !important;
+}
+
+.green {
+  color: green !important;
+}

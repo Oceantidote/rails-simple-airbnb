@@ -12,7 +12,8 @@ puts 'Creating 4 fake flats...'
     address: '10 Clifton Gardens London W9 1DT',
     description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
     price_per_night: 75,
-    number_of_guests: 3
+    number_of_guests: 3,
+    photo: "https://i.ytimg.com/vi/8PmEY4TA8W4/maxresdefault.jpg"
   )
   flat.save!
 end

@@ -1,6 +1,6 @@
 <h3><%= @flat.name %></h3>
-<p><%= @flat.address %></p>
+<h6><%= @flat.address %></h6>
 <p><%= @flat.description %></p>
-<h4>Guests: <%= @flat.number_of_guests %></h4>
-<h4>Price per night: <%= @flat.price_per_night %></h4>
+<h4><i class="material-icons">hotel</i> <%= @flat.number_of_guests %></h4>
+<h4><i class="material-icons">euro_symbol</i> <%= @flat.price_per_night %></h4>
 <%= link_to "home", flats_path %>
